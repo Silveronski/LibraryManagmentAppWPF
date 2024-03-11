@@ -1,0 +1,4 @@
+Exception: System.ArgumentException: The name you entered does not relate to any of the items in the library!
+   at BookJurnalLibrary.DataBase.FilterItemsByName(String name) in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\DataBase.cs:line 242
+   at LibraryAssignmentWPF.UserControls.ShowAvailableItems.BtnFind_ButtonClickEvent(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\ShowAvailableItems.xaml.cs:line 35 
+Date: 8/16/2023 3:17:31 PM

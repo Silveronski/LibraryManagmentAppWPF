@@ -1,0 +1,4 @@
+Exception: System.ArgumentNullException: Value cannot be null. (Parameter 'Please select a genre!')
+   at LibraryAssignmentWPF.UserControls.AddBook.IsComboBoxNull() in C:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\AddBook.xaml.cs:line 105
+   at LibraryAssignmentWPF.UserControls.AddBook.btnEnter_Click(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\AddBook.xaml.cs:line 28 
+Date: 12/23/2023 10:36:18 PM

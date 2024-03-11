@@ -1,0 +1,6 @@
+8/17/2023 1:59:35 AM
+Items Bought:
+ISBN: 201100 | Name: I am very old | Price: $150.00 | Book
+ISBN: 181818 | Name: test2 | Price: $12.00 | Journal
+ISBN: 454545 | Name: manuel | Price: $25.00 | Book
+Total Price After Club Discount: $168.30

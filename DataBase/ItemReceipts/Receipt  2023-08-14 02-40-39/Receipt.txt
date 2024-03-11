@@ -1,0 +1,5 @@
+8/14/2023 2:40:39 AM
+Items Bought:
+ISBN: 121212 | Name: ggg | Price: $1.00 | Book
+ISBN: 454545 | Name: manuel | Price: $25.00 | Book
+Total Price: $26.00

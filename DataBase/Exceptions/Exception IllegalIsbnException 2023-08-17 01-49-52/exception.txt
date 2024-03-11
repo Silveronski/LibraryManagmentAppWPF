@@ -1,0 +1,4 @@
+Exception: BookJurnalLibrary.IllegalIsbnException: The ISBN you entered does not match an existing item!
+   at BookJurnalLibrary.DataBase.IsIsbnValid(String isbn) in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\DataBase.cs:line 339
+   at LibraryAssignmentWPF.UserControls.EditJournal.btnInput_Click(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\EditJournal.xaml.cs:line 26 
+Date: 8/17/2023 1:49:52 AM

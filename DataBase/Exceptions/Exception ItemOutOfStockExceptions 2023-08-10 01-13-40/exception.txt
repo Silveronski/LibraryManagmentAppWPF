@@ -1,0 +1,4 @@
+Exception: BookJurnalLibrary.ItemOutOfStockExceptions: shahaf's horoscope of the day is out of stock!
+   at BookJurnalLibrary.AbstractItem.SubstractBookFromLibrary() in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\AbstractItem.cs:line 59
+   at LibraryAssignmentWPF.UserControls.SellJournal.Button_Click(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\SellJournal.xaml.cs:line 48 
+Date: 10/08/2023 01:13:40

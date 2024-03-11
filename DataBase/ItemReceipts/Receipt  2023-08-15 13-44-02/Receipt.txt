@@ -1,0 +1,6 @@
+8/15/2023 1:44:02 PM
+Items Bought:
+ISBN: 999999 | Name: gfdhjj | Price: $100.00 | Book
+ISBN: 999999 | Name: gfdhjj | Price: $100.00 | Book
+ISBN: 999999 | Name: gfdhjj | Price: $100.00 | Book
+Total Price After Club Discount: $270.00

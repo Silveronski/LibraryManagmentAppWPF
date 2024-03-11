@@ -1,0 +1,4 @@
+Exception: BookJurnalLibrary.IllegalIsbnException: The ISBN you entered does not match an existing item!
+   at BookJurnalLibrary.DataBase.FindItem(String isbn) in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\DataBase.cs:line 351
+   at LibraryAssignmentWPF.UserControls.RemoveJournal.btnInput_Click(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\RemoveJournal.xaml.cs:line 28 
+Date: 8/17/2023 1:53:11 AM

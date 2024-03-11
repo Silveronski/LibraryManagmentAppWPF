@@ -1,0 +1,4 @@
+Exception: BookJurnalLibrary.IllegalIdException: This ID does not exist in the club!
+   at BookJurnalLibrary.Customer.ActivateDiscount(String customerId) in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\Customer.cs:line 25
+   at LibraryAssignmentWPF.UserControls.SellItems.BtnDiscount_ButtonClickEvent(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\SellItems.xaml.cs:line 48 
+Date: 8/15/2023 1:19:56 PM

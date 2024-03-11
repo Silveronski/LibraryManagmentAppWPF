@@ -1,0 +1,4 @@
+Exception: System.IO.DirectoryNotFoundException: Data base directory could not be found!
+   at BookJurnalLibrary.Customer.LoadCustomers() in C:\Users\Ron\Desktop\projects\Projects\LibraryProject\BookJurnalLibrary\Customer.cs:line 63
+   at LibraryAssignmentWPF.MainWindow..ctor() in C:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\MainWindow.xaml.cs:line 19 
+Date: 12/23/2023 3:03:40 PM

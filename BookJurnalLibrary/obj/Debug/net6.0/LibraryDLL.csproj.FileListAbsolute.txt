@@ -1,0 +1,12 @@
+C:\Users\Ron\Desktop\projects\BookJurnalLibrary\bin\Debug\net6.0\LibraryDLL.deps.json
+C:\Users\Ron\Desktop\projects\BookJurnalLibrary\bin\Debug\net6.0\LibraryDLL.dll
+C:\Users\Ron\Desktop\projects\BookJurnalLibrary\bin\Debug\net6.0\LibraryDLL.pdb
+C:\Users\Ron\Desktop\projects\BookJurnalLibrary\obj\Debug\net6.0\LibraryDLL.csproj.AssemblyReference.cache
+C:\Users\Ron\Desktop\projects\BookJurnalLibrary\obj\Debug\net6.0\LibraryDLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ron\Desktop\projects\BookJurnalLibrary\obj\Debug\net6.0\LibraryDLL.AssemblyInfoInputs.cache
+C:\Users\Ron\Desktop\projects\BookJurnalLibrary\obj\Debug\net6.0\LibraryDLL.AssemblyInfo.cs
+C:\Users\Ron\Desktop\projects\BookJurnalLibrary\obj\Debug\net6.0\LibraryDLL.csproj.CoreCompileInputs.cache
+C:\Users\Ron\Desktop\projects\BookJurnalLibrary\obj\Debug\net6.0\LibraryDLL.dll
+C:\Users\Ron\Desktop\projects\BookJurnalLibrary\obj\Debug\net6.0\refint\LibraryDLL.dll
+C:\Users\Ron\Desktop\projects\BookJurnalLibrary\obj\Debug\net6.0\LibraryDLL.pdb
+C:\Users\Ron\Desktop\projects\BookJurnalLibrary\obj\Debug\net6.0\ref\LibraryDLL.dll

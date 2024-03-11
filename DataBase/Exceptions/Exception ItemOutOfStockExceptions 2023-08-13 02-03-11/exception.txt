@@ -1,0 +1,4 @@
+Exception: BookJurnalLibrary.ItemOutOfStockExceptions: gfdhjj is out of stock!
+   at BookJurnalLibrary.AbstractItem.SubstractItemFromLibrary() in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\AbstractItem.cs:line 59
+   at LibraryAssignmentWPF.UserControls.SellItems.Button_Click(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\SellItems.xaml.cs:line 69 
+Date: 8/13/2023 2:03:11 AM

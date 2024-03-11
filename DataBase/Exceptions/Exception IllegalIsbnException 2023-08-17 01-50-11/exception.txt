@@ -1,0 +1,4 @@
+Exception: BookJurnalLibrary.IllegalIsbnException: The ISBN must be exactly 6 digits!
+   at BookJurnalLibrary.AbstractItem.IsIsbnValid(String isbn) in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\AbstractItem.cs:line 52
+   at LibraryAssignmentWPF.UserControls.EditJournal2.EditIsbn() in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\EditJournal2.xaml.cs:line 165 
+Date: 8/17/2023 1:50:11 AM

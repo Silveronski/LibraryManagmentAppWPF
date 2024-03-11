@@ -1,0 +1,4 @@
+Exception: BookJurnalLibrary.IllegalIdException: This id already exists!
+   at BookJurnalLibrary.Customer.DoesIdExistInClub(String customerId) in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\Customer.cs:line 18
+   at LibraryAssignmentWPF.UserControls.AddCustomer.btnInput_Click(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\AddCustomer.xaml.cs:line 33 
+Date: 8/14/2023 2:06:46 AM

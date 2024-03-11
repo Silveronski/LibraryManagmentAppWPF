@@ -1,0 +1,4 @@
+Exception: System.IO.DirectoryNotFoundException: Receipts directory could not be found!
+   at BookJurnalLibrary.DataBase.SaveReceipt(List`1 items, Double totalPrice, Boolean ClubDiscount) in C:\Users\Ron\Desktop\projects\Projects\LibraryProject\BookJurnalLibrary\DataBase.cs:line 93
+   at LibraryAssignmentWPF.UserControls.SellItems.Button_ClickPay(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\SellItems.xaml.cs:line 146 
+Date: 12/23/2023 10:43:47 PM

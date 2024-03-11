@@ -1,0 +1,5 @@
+12/23/2023 10:46:00 PM
+Items Bought:
+ISBN: 845736 | Name: shahaf is great | Price: $500.00 | Book
+ISBN: 468535 | Name: shahaf's horoscope of the day | Price: $60.00 | Journal
+Total Price After Club Discount: $504.00

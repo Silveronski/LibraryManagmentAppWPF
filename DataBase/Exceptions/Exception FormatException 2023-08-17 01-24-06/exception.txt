@@ -1,0 +1,4 @@
+Exception: System.FormatException: The price must be a positive number and no more than 9999!
+   at BookJurnalLibrary.AbstractItem.IsPriceDouble(String price) in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\AbstractItem.cs:line 33
+   at LibraryAssignmentWPF.UserControls.EditBook2.EditPrice() in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\EditBook2.xaml.cs:line 308 
+Date: 8/17/2023 1:24:06 AM

@@ -1,0 +1,5 @@
+8/17/2023 2:34:51 PM
+Items Bought:
+ISBN: 123456 | Name: jhgfddsd | Price: $100.00 | Book
+ISBN: 121212 | Name: ggg | Price: $1.00 | Book
+Total Price After Club Discount: $90.90

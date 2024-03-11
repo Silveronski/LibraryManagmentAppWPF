@@ -1,0 +1,4 @@
+Exception: BookJurnalLibrary.IllegalIdException: This ID does not exist in the club!
+   at BookJurnalLibrary.Customer.RemoveCustomerFromClub(String customerId) in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\Customer.cs:line 27
+   at LibraryAssignmentWPF.UserControls.RemoveCustomer.btnInput_Click(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\RemoveCustomer.xaml.cs:line 31 
+Date: 8/14/2023 2:34:25 AM

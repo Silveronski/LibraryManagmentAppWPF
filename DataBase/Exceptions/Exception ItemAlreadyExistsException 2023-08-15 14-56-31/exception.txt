@@ -1,0 +1,4 @@
+Exception: BookJurnalLibrary.ItemAlreadyExistsException: This item already exists in the library!
+   at BookJurnalLibrary.DataBase.AddItem(AbstractItem item) in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\DataBase.cs:line 260
+   at LibraryAssignmentWPF.UserControls.AddJournal.btnEnter_Click(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\AddJournal.xaml.cs:line 31 
+Date: 8/15/2023 2:56:31 PM

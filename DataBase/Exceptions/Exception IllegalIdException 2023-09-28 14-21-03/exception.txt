@@ -1,0 +1,4 @@
+Exception: BookJurnalLibrary.IllegalIdException: ID must be exactly 9 digits!
+   at BookJurnalLibrary.Customer.IsIdValid(String customerId) in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\Customer.cs:line 43
+   at LibraryAssignmentWPF.UserControls.AddCustomer.btnInput_Click(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\AddCustomer.xaml.cs:line 32 
+Date: 9/28/2023 2:21:03 PM

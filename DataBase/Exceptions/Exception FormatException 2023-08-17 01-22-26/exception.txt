@@ -1,0 +1,4 @@
+Exception: System.FormatException: The Quantity must be a whole positive number and no more than 500!
+   at BookJurnalLibrary.AbstractItem.IsQuantityInt(String quantity) in C:\Users\Ron\Desktop\projects\LibraryProject\BookJurnalLibrary\AbstractItem.cs:line 42
+   at LibraryAssignmentWPF.UserControls.AddBook.btnEnter_Click(Object sender, RoutedEventArgs e) in C:\Users\Ron\Desktop\projects\LibraryProject\LibraryAssignmentWPF\UserControls\AddBook.xaml.cs:line 33 
+Date: 8/17/2023 1:22:26 AM
