@@ -5,7 +5,7 @@ namespace LibraryAssignmentWPF.UserControls
 {   
     public partial class EditJournal : UserControl
     {
-        public static string Isbn { get; set; }
+        public static string? Isbn { get; set; }
         public EditJournal()
         {
             InitializeComponent();

@@ -30,37 +30,37 @@ namespace LibraryAssignmentWPF.UserControls
                 Journal actualJournal = new Journal(journal.Isbn, journal.Name, journal.Edition, journal.Quantity, journal.Price);
                 DataBase.AddItem(actualJournal);
                 DataBase.SaveItemInformation(actualJournal);              
-                journal = new Journal();
                 MessageBox.Show($"{actualJournal.Name} has been successfully created", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 ClearAllTextBoxes();
                 ReturnToManagerMenu();
             }
             catch (ArgumentNullException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
             }
             catch (FormatException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
             }
             catch (ItemAlreadyExistsException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
             }
             catch (IllegalIsbnException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
             }
             catch (DirectoryNotFoundException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
                 DataBase.RemoveItem(isbnx.txtInput.Text);
             }
+        }
+
+        private void ErrorMessage(Exception ex)
+        {
+            DataBase.LogException(ex);
+            MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void ClearAllTextBoxes()

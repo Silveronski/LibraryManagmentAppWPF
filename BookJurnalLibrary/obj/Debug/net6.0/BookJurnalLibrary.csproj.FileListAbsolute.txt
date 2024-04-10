@@ -45,3 +45,15 @@ C:\Users\Ron\Desktop\projects\Projects\LibraryProject\BookJurnalLibrary\obj\Debu
 C:\Users\Ron\Desktop\projects\Projects\LibraryProject\BookJurnalLibrary\obj\Debug\net6.0\refint\BookJurnalLibrary.dll
 C:\Users\Ron\Desktop\projects\Projects\LibraryProject\BookJurnalLibrary\obj\Debug\net6.0\BookJurnalLibrary.pdb
 C:\Users\Ron\Desktop\projects\Projects\LibraryProject\BookJurnalLibrary\obj\Debug\net6.0\ref\BookJurnalLibrary.dll
+C:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\BookJurnalLibrary\bin\Debug\net6.0\BookJurnalLibrary.deps.json
+C:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\BookJurnalLibrary\bin\Debug\net6.0\BookJurnalLibrary.dll
+C:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\BookJurnalLibrary\bin\Debug\net6.0\BookJurnalLibrary.pdb
+C:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\BookJurnalLibrary\obj\Debug\net6.0\BookJurnalLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\BookJurnalLibrary\obj\Debug\net6.0\BookJurnalLibrary.AssemblyInfoInputs.cache
+C:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\BookJurnalLibrary\obj\Debug\net6.0\BookJurnalLibrary.AssemblyInfo.cs
+C:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\BookJurnalLibrary\obj\Debug\net6.0\BookJurnalLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\BookJurnalLibrary\obj\Debug\net6.0\BookJurnalLibrary.sourcelink.json
+C:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\BookJurnalLibrary\obj\Debug\net6.0\BookJurnalLibrary.dll
+C:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\BookJurnalLibrary\obj\Debug\net6.0\refint\BookJurnalLibrary.dll
+C:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\BookJurnalLibrary\obj\Debug\net6.0\BookJurnalLibrary.pdb
+C:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\BookJurnalLibrary\obj\Debug\net6.0\ref\BookJurnalLibrary.dll

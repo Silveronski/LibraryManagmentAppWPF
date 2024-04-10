@@ -42,7 +42,7 @@ namespace LibraryAssignmentWPF.UserControls
             try
             {
                 journal = new Journal();
-                journal = (Journal)DataBase.FindItem(EditJournal.Isbn);
+                journal = (Journal)DataBase.FindItem(EditJournal.Isbn!);
             }
 
             catch (InvalidCastException ex)
@@ -112,9 +112,9 @@ namespace LibraryAssignmentWPF.UserControls
             viewBoxTextBox.Visibility = Visibility.Visible;
 
             string boundText = "";
-            for (int i = 0; i < comboBox.SelectedItem.ToString().Length; i++)
+            for (int i = 0; i < comboBox.SelectedItem.ToString()!.Length; i++)
             {
-                if (Char.IsLetter(comboBox.SelectedItem.ToString()[i])) boundText += comboBox.SelectedItem.ToString()[i];
+                if (Char.IsLetter(comboBox.SelectedItem.ToString()![i])) boundText += comboBox.SelectedItem.ToString()![i];
                 else break;
             }
 
@@ -172,17 +172,21 @@ namespace LibraryAssignmentWPF.UserControls
             }
             catch (IllegalIsbnException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
                 editTextBox.txtInput.Focus();
             }
             catch (DirectoryNotFoundException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
                 journal.Isbn = oldIsbn;
                 editTextBox.txtInput.Focus();
             }
+        }
+
+        private void ErrorMessage(Exception ex)
+        {
+            DataBase.LogException(ex);
+            MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
         }
         private void EditName()
         {
@@ -204,8 +208,7 @@ namespace LibraryAssignmentWPF.UserControls
                 }
                 catch (DirectoryNotFoundException ex)
                 {
-                    DataBase.LogException(ex);
-                    MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                    ErrorMessage(ex);
                     journal.Name = oldName;
                     editTextBox.txtInput.Focus();
                 }
@@ -231,8 +234,7 @@ namespace LibraryAssignmentWPF.UserControls
                 }
                 catch (DirectoryNotFoundException ex)
                 {
-                    DataBase.LogException(ex);
-                    MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                    ErrorMessage(ex);
                     journal.Edition = oldEdition;
                     editTextBox.txtInput.Focus();
                 }
@@ -251,14 +253,12 @@ namespace LibraryAssignmentWPF.UserControls
             }
             catch (FormatException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
                 editTextBox.txtInput.Focus();
             }
             catch (DirectoryNotFoundException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
                 journal.Quantity = oldQuantity;
                 editTextBox.txtInput.Focus();
             }
@@ -276,14 +276,12 @@ namespace LibraryAssignmentWPF.UserControls
             }
             catch (FormatException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
                 editTextBox.txtInput.Focus();
             }
             catch (DirectoryNotFoundException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
                 journal.Price = oldPrice;
                 editTextBox.txtInput.Focus();
             }

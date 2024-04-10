@@ -37,14 +37,12 @@ namespace LibraryAssignmentWPF.UserControls
                 }
                 catch (IllegalIsbnException ex)
                 {
-                    DataBase.LogException(ex);
-                    MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                    ErrorMessage(ex);
                     isbnBox.txtInput.Focus();
                 }
                 catch (DirectoryNotFoundException ex)
                 {
-                    DataBase.LogException(ex);
-                    MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                    ErrorMessage(ex);
                     DataBase.AddItem(book);
                     isbnBox.txtInput.Focus();
                 }
@@ -59,6 +57,12 @@ namespace LibraryAssignmentWPF.UserControls
             {
                 ReturnToManagerMenu();
             }
+        }
+
+        private void ErrorMessage(Exception ex)
+        {
+            DataBase.LogException(ex);
+            MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void ReturnToManagerMenu()

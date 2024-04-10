@@ -1,4 +1,5 @@
 ﻿using BookJurnalLibrary;
+using System;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
@@ -77,15 +78,13 @@ namespace LibraryAssignmentWPF.UserControls
                 }
                 catch (DirectoryNotFoundException ex)
                 {
-                    DataBase.LogException(ex);
                     Customer.RemoveCustomerFromClub(idBox.txtInput.Text);
-                    MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                    ErrorMessage(ex);
                     payBox.txtInput.Focus();
                 }
                 catch (IllegalIdException ex)
                 {
-                    DataBase.LogException(ex);
-                    MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                    ErrorMessage(ex);
                     payBox.txtInput.Focus();
                 }
             }
@@ -94,6 +93,12 @@ namespace LibraryAssignmentWPF.UserControls
                 MessageBox.Show("Please pay the specified amount!", "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
                 payBox.txtInput.Focus();
             }
+        }
+
+        private void ErrorMessage(Exception ex)
+        {
+            DataBase.LogException(ex);
+            MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void BtnPayReturn_ButtonClickEvent(object sender, RoutedEventArgs e)

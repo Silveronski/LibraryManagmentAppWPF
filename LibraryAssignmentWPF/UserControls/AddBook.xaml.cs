@@ -32,38 +32,38 @@ namespace LibraryAssignmentWPF.UserControls
                 book.IsQuantityInt(quantityx.txtInput.Text); 
                 Book actualBook = new Book(isbnx.txtInput.Text,namex.txtInput.Text, editionx.txtInput.Text,book.Quantity, summaryx.txtInput.Text,book.Genre,book.Price);
                 DataBase.AddItem(actualBook);
-                DataBase.SaveItemInformation(actualBook);               
-                book = new Book();
+                DataBase.SaveItemInformation(actualBook);                            
                 MessageBox.Show($"{actualBook.Name} has been successfully created", "Success",MessageBoxButton.OK,MessageBoxImage.Information);               
                 ClearAllTextBoxes();
                 ReturnToManagerMenu();               
             }
             catch (ArgumentNullException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR",MessageBoxButton.OK,MessageBoxImage.Error);
+                ErrorMessage(ex);
             }
             catch (FormatException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
             }
             catch (ItemAlreadyExistsException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
             }
             catch (IllegalIsbnException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
             }
             catch (DirectoryNotFoundException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErrorMessage(ex);
                 DataBase.RemoveItem(isbnx.txtInput.Text);
             }
+        }
+
+        private void ErrorMessage(Exception ex)
+        {
+            DataBase.LogException(ex);
+            MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
         }
         
         private void ClearAllTextBoxes()

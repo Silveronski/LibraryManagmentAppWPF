@@ -1,4 +1,5 @@
 ﻿using BookJurnalLibrary;
+using System;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
@@ -35,15 +36,13 @@ namespace LibraryAssignmentWPF.UserControls
                     }
                     catch (DirectoryNotFoundException ex)
                     {
-                        DataBase.LogException(ex);
+                        ErrorMessage(ex);
                         Customer.AddCustomerToClub(idBox.txtInput.Text);
-                        MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
                         idBox.txtInput.Focus();
                     }
                     catch (IllegalIdException ex)
                     {
-                        DataBase.LogException(ex);
-                        MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                        ErrorMessage(ex);
                         idBox.txtInput.Focus();
                     }
                 }
@@ -57,6 +56,12 @@ namespace LibraryAssignmentWPF.UserControls
             {
                 ReturnToWorkerMenu();
             }
+        }
+
+        private void ErrorMessage(Exception ex)
+        {
+            DataBase.LogException(ex);
+            MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void ReturnToWorkerMenu()

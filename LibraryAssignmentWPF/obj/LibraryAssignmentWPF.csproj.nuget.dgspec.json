@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ron\\Desktop\\projects\\Projects\\LibraryProject\\LibraryAssignmentWPF\\LibraryAssignmentWPF.csproj": {}
+    "C:\\Users\\Ron\\Desktop\\HTML Porjects\\GitHub\\LibraryManagmentAppWPF\\LibraryAssignmentWPF\\LibraryAssignmentWPF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ron\\Desktop\\projects\\Projects\\LibraryProject\\BookJurnalLibrary\\BookJurnalLibrary.csproj": {
+    "C:\\Users\\Ron\\Desktop\\HTML Porjects\\GitHub\\LibraryManagmentAppWPF\\BookJurnalLibrary\\BookJurnalLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ron\\Desktop\\projects\\Projects\\LibraryProject\\BookJurnalLibrary\\BookJurnalLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Ron\\Desktop\\HTML Porjects\\GitHub\\LibraryManagmentAppWPF\\BookJurnalLibrary\\BookJurnalLibrary.csproj",
         "projectName": "BookJurnalLibrary",
-        "projectPath": "C:\\Users\\Ron\\Desktop\\projects\\Projects\\LibraryProject\\BookJurnalLibrary\\BookJurnalLibrary.csproj",
+        "projectPath": "C:\\Users\\Ron\\Desktop\\HTML Porjects\\GitHub\\LibraryManagmentAppWPF\\BookJurnalLibrary\\BookJurnalLibrary.csproj",
         "packagesPath": "C:\\Users\\Ron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ron\\Desktop\\projects\\Projects\\LibraryProject\\BookJurnalLibrary\\obj\\",
+        "outputPath": "C:\\Users\\Ron\\Desktop\\HTML Porjects\\GitHub\\LibraryManagmentAppWPF\\BookJurnalLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ron\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\Ron\\Desktop\\projects\\Projects\\LibraryProject\\LibraryAssignmentWPF\\LibraryAssignmentWPF.csproj": {
+    "C:\\Users\\Ron\\Desktop\\HTML Porjects\\GitHub\\LibraryManagmentAppWPF\\LibraryAssignmentWPF\\LibraryAssignmentWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ron\\Desktop\\projects\\Projects\\LibraryProject\\LibraryAssignmentWPF\\LibraryAssignmentWPF.csproj",
+        "projectUniqueName": "C:\\Users\\Ron\\Desktop\\HTML Porjects\\GitHub\\LibraryManagmentAppWPF\\LibraryAssignmentWPF\\LibraryAssignmentWPF.csproj",
         "projectName": "LibraryAssignmentWPF",
-        "projectPath": "C:\\Users\\Ron\\Desktop\\projects\\Projects\\LibraryProject\\LibraryAssignmentWPF\\LibraryAssignmentWPF.csproj",
+        "projectPath": "C:\\Users\\Ron\\Desktop\\HTML Porjects\\GitHub\\LibraryManagmentAppWPF\\LibraryAssignmentWPF\\LibraryAssignmentWPF.csproj",
         "packagesPath": "C:\\Users\\Ron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ron\\Desktop\\projects\\Projects\\LibraryProject\\LibraryAssignmentWPF\\obj\\",
+        "outputPath": "C:\\Users\\Ron\\Desktop\\HTML Porjects\\GitHub\\LibraryManagmentAppWPF\\LibraryAssignmentWPF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ron\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Ron\\Desktop\\projects\\Projects\\LibraryProject\\BookJurnalLibrary\\BookJurnalLibrary.csproj": {
-                "projectPath": "C:\\Users\\Ron\\Desktop\\projects\\Projects\\LibraryProject\\BookJurnalLibrary\\BookJurnalLibrary.csproj"
+              "C:\\Users\\Ron\\Desktop\\HTML Porjects\\GitHub\\LibraryManagmentAppWPF\\BookJurnalLibrary\\BookJurnalLibrary.csproj": {
+                "projectPath": "C:\\Users\\Ron\\Desktop\\HTML Porjects\\GitHub\\LibraryManagmentAppWPF\\BookJurnalLibrary\\BookJurnalLibrary.csproj"
               }
             }
           }

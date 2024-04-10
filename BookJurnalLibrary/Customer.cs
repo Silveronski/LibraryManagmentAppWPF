@@ -4,6 +4,8 @@ namespace BookJurnalLibrary
     public static class Customer
     {
         static List<string> customerIds = new List<string>();
+        static string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
+        static string customerDirectory = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Customers";
         public static void AddCustomerToClub(string customerId)
         {
             DoesIdExistInClub(customerId);
@@ -20,18 +22,12 @@ namespace BookJurnalLibrary
 
         public static void ActivateDiscount(string customerId)
         {
-            if (!customerIds.Contains(customerId))
-            {
-                throw new IllegalIdException("This ID does not exist in the club!");
-            }
+            CheckForCustomerExistence(customerId);
         }
 
         public static void RemoveCustomerFromClub(string customerId)
         {
-            if (!customerIds.Contains(customerId))
-            {
-                throw new IllegalIdException("This ID does not exist in the club!");
-            }
+            CheckForCustomerExistence(customerId);
             customerIds.Remove(customerId);
         }
 
@@ -45,9 +41,8 @@ namespace BookJurnalLibrary
 
         public static void SaveCustomer(string customerId)
         {
-            string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
-            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");
-            string customerDirectory = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Customers";
+            CheckForDbExistence();
+
             if (!Directory.Exists(customerDirectory)) throw new DirectoryNotFoundException("Customers directory could not be found!");
                    
             string directory = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Customers\Customer " + " " + customerId;
@@ -59,10 +54,8 @@ namespace BookJurnalLibrary
 
         public static void LoadCustomers()
         {
-            string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
-            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");
-
-            string customerDirectory = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Customers";          
+            CheckForDbExistence();
+        
             if (Directory.Exists(customerDirectory))
             {
                 foreach (string filePath in Directory.GetFiles(customerDirectory, "CustomerId.txt", SearchOption.AllDirectories))
@@ -76,8 +69,7 @@ namespace BookJurnalLibrary
 
         public static void DeleteFile(string customerId)
         {
-            string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
-            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");
+            CheckForDbExistence();
 
             string directory = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Customers\Customer " + " " + customerId;           
             if (Directory.Exists(directory)) Directory.Delete(directory, true);
@@ -87,6 +79,19 @@ namespace BookJurnalLibrary
         public static int GetCustomersCount()
         {
             return customerIds.Count;
+        }
+
+        public static void CheckForDbExistence()
+        {
+            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");
+        }
+
+        public static void CheckForCustomerExistence(string customerId)
+        {
+            if (!customerIds.Contains(customerId))
+            {
+                throw new IllegalIdException("This ID does not exist in the club!");
+            }
         }
     }
 }

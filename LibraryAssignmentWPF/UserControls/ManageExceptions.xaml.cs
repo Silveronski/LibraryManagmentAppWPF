@@ -71,6 +71,6 @@ namespace LibraryAssignmentWPF.UserControls
                 DataBase.LogException(ex);
                 MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-        }
+        }    
     }
 }

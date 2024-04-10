@@ -1,25 +1,25 @@
-﻿C:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+﻿
 
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\MainWindow.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\AddBook.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\AddCustomer.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\AddJournal.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\ClearableTextBox.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\EditBook.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\EditBook2.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\EditJournal.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\EditJournal2.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\ManageExceptions.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\Manager.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\MenuButton.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\Receipts.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\RemoveBook.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\RemoveCustomer.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\RemoveJournal.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\SellItems.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\ShowAvailableItems.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\ShowBooks.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\ShowClubCustomers.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\ShowJournals.xaml;;
-FC:\Users\Ron\Desktop\projects\Projects\LibraryProject\LibraryAssignmentWPF\UserControls\Worker.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\MainWindow.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\AddBook.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\AddCustomer.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\AddJournal.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\ClearableTextBox.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\EditBook.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\EditBook2.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\EditJournal.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\EditJournal2.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\ManageExceptions.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\Manager.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\MenuButton.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\Receipts.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\RemoveBook.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\RemoveCustomer.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\RemoveJournal.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\SellItems.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\ShowAvailableItems.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\ShowBooks.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\ShowClubCustomers.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\ShowJournals.xaml;;
+FC:\Users\Ron\Desktop\HTML Porjects\GitHub\LibraryManagmentAppWPF\LibraryAssignmentWPF\UserControls\Worker.xaml;;
 

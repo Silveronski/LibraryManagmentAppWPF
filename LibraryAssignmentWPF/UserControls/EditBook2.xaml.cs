@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics.Eventing.Reader;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
@@ -136,9 +135,9 @@ namespace LibraryAssignmentWPF.UserControls
                 viewBoxTextBox.Visibility = Visibility.Visible;
                 string boundText = "";
 
-                for (int i = 0; i < comboBox.SelectedItem.ToString().Length; i++)
+                for (int i = 0; i < comboBox.SelectedItem.ToString()!.Length; i++)
                 {
-                    if (Char.IsLetter(comboBox.SelectedItem.ToString()[i])) boundText += comboBox.SelectedItem.ToString()[i];
+                    if (Char.IsLetter(comboBox.SelectedItem.ToString()![i])) boundText += comboBox.SelectedItem.ToString()![i];
                     else break;
                 }
                 
@@ -211,17 +210,23 @@ namespace LibraryAssignmentWPF.UserControls
             }
             catch (IllegalIsbnException ex)
             {
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErorrMessage(ex);
                 editTextBox.txtInput.Focus();
             }
             catch (DirectoryNotFoundException ex)
             {
-                DataBase.LogException(ex);
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                ErorrMessage(ex);
                 book.Isbn = oldIsbn;
                 editTextBox.txtInput.Focus();
             }
         }
+
+        private void ErorrMessage(Exception ex)
+        {
+            DataBase.LogException(ex);
+            MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+
         private void EditName()
         {
             if (string.IsNullOrWhiteSpace(editTextBox.txtInput.Text))

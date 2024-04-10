@@ -5,11 +5,11 @@ namespace BookJurnalLibrary
     public static class DataBase
     {
         static List<AbstractItem> libraryItems = new List<AbstractItem>();
+        static string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
 
         public static void SaveItemInformation(AbstractItem item)
         {
-            string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
-            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");
+            CheckForDbExistence();
             string bookDirectory = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Books";
             if (!Directory.Exists(bookDirectory)) throw new DirectoryNotFoundException("Book data base directory could not be found!");
             string journalDirectory = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Journals";
@@ -40,8 +40,7 @@ namespace BookJurnalLibrary
         
         public static void LoadItems()
         {
-            string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
-            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");
+            CheckForDbExistence();
 
             string directoryPathBooks = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Books";
             string directoryPathJournals = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Journals";
@@ -86,8 +85,7 @@ namespace BookJurnalLibrary
 
         public static void SaveReceipt(List<AbstractItem> items , double totalPrice, bool ClubDiscount = false)
         {
-            string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
-            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");            
+            CheckForDbExistence();            
             
             string itemReceiptsDirectory = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\ItemReceipts";
             if (!Directory.Exists(itemReceiptsDirectory)) throw new DirectoryNotFoundException("Receipts directory could not be found!");
@@ -115,10 +113,9 @@ namespace BookJurnalLibrary
 
         public static List<string> GetReceipts()
         {
-            var receipts = new List<string>();
-            string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
-            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");
+            CheckForDbExistence();
 
+            var receipts = new List<string>();
             string directoryPath = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\ItemReceipts";
 
             if (Directory.Exists(directoryPath))
@@ -135,10 +132,9 @@ namespace BookJurnalLibrary
 
         public static List<string> GetExceptions()
         {
-            var exceptions = new List<string>();
-            string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
-            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");
+            CheckForDbExistence();
 
+            var exceptions = new List<string>();
             string directoryPath = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Exceptions";
 
             if (Directory.Exists(directoryPath))
@@ -155,10 +151,9 @@ namespace BookJurnalLibrary
 
         public static List<string> GetCustomers()
         {
-            var customers = new List<string>();
-            string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";                            
-            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");
+            CheckForDbExistence();
 
+            var customers = new List<string>();
             string directoryPath = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Customers";
 
             if (Directory.Exists(directoryPath))
@@ -181,7 +176,6 @@ namespace BookJurnalLibrary
        
         public static void LogException(Exception exception)
         {
-            string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
             if (!Directory.Exists(dataBase)) return;
 
             string directoryPath = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Exceptions\Exception " + exception.GetType().Name + " " + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss");
@@ -199,8 +193,7 @@ namespace BookJurnalLibrary
 
         public static void DoesReceiptsDirExist()
         {
-            string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
-            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");
+            CheckForDbExistence();
 
             string directoryPath = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\ItemReceipts";
             if (Directory.Exists(directoryPath))
@@ -216,8 +209,7 @@ namespace BookJurnalLibrary
 
         public static void DoesExceptionsDirExist()
         {
-            string dataBase = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase";
-            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");
+            CheckForDbExistence();
 
             string directoryPath = @"C:\Users\Ron\Desktop\projects\Projects\LibraryProject\DataBase\Exceptions";
             if (Directory.Exists(directoryPath))
@@ -229,6 +221,11 @@ namespace BookJurnalLibrary
                 }
             }
             else throw new DirectoryNotFoundException("Exceptions directory could not be found!");
+        }
+
+        public static void CheckForDbExistence()
+        {
+            if (!Directory.Exists(dataBase)) throw new DirectoryNotFoundException("Data base directory could not be found!");
         }
 
         public static List<AbstractItem> FilterItemsByName(string name)
